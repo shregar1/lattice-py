@@ -1,0 +1,11 @@
+{
+  "serviceName": "LatticeBackend",
+  "environment": "development",
+  "port": 3000,
+  "database": {
+    "sql": {"type": "sqlite", "sqlitePath": ":memory:"},
+    "noSql": {"type": "in_memory_doc"}
+  },
+  "cache": {"type": "in_memory"},
+  "queue": {"type": "in_memory"}
+}
