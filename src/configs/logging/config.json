@@ -1,0 +1,9 @@
+{
+  "level": "info",
+  "file": "logs/mono-backend.ndjson",
+  "stdout": true,
+  "stdout_format": "pretty",
+  "stdout_color": "auto",
+  "caller_info": true,
+  "sample_one_in": 1
+}

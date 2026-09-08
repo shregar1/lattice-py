@@ -1,0 +1,8 @@
+{
+  "uri": "mongodb://localhost:27017",
+  "database": "mono",
+  "max_pool_size": 10,
+  "min_pool_size": 1,
+  "server_selection_timeout_ms": 5000,
+  "connect_timeout_ms": 10000
+}

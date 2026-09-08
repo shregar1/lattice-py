@@ -1,0 +1,46 @@
+"""key enum module."""
+
+from enum import Enum
+from abstractions import EnumLayer
+from constants import ExceptionKey
+
+
+class ExceptionKeyENUM(EnumLayer):
+    DOMAIN = ExceptionKey.DOMAIN
+    NOT_FOUND = ExceptionKey.NOT_FOUND
+    VALIDATION = ExceptionKey.VALIDATION
+    CONFLICT = ExceptionKey.CONFLICT
+    FORBIDDEN = ExceptionKey.FORBIDDEN
+    UNAUTHORIZED = ExceptionKey.UNAUTHORIZED
+    METHOD_NOT_ALLOWED = ExceptionKey.METHOD_NOT_ALLOWED
+    PAYLOAD_TOO_LARGE = ExceptionKey.PAYLOAD_TOO_LARGE
+    UNSUPPORTED_MEDIA_TYPE = ExceptionKey.UNSUPPORTED_MEDIA_TYPE
+    UNPROCESSABLE_ENTITY = ExceptionKey.UNPROCESSABLE_ENTITY
+    TOO_MANY_REQUESTS = ExceptionKey.TOO_MANY_REQUESTS
+    INTERNAL_SERVER_ERROR = ExceptionKey.INTERNAL_SERVER_ERROR
+    BAD_GATEWAY = ExceptionKey.BAD_GATEWAY
+    SERVICE_UNAVAILABLE = ExceptionKey.SERVICE_UNAVAILABLE
+    GATEWAY_TIMEOUT = ExceptionKey.GATEWAY_TIMEOUT
+    PROHIBITED_ID_PARAMETER = ExceptionKey.PROHIBITED_ID_PARAMETER
+    MALICIOUS_INPUT_DETECTED = ExceptionKey.MALICIOUS_INPUT_DETECTED
+    BAD_INPUT_EMAIL = ExceptionKey.BAD_INPUT_EMAIL
+    BAD_INPUT_PASSWORD = ExceptionKey.BAD_INPUT_PASSWORD
+    BAD_INPUT_URN = ExceptionKey.BAD_INPUT_URN
+    BAD_INPUT_URL = ExceptionKey.BAD_INPUT_URL
+    BAD_INPUT_ENUM = ExceptionKey.BAD_INPUT_ENUM
+    BAD_INPUT_PAGINATION = ExceptionKey.BAD_INPUT_PAGINATION
+    BAD_INPUT_DATE_TIME = ExceptionKey.BAD_INPUT_DATE_TIME
+    BAD_INPUT_NUMERIC = ExceptionKey.BAD_INPUT_NUMERIC
+    BAD_INPUT_SLUG = ExceptionKey.BAD_INPUT_SLUG
+    BAD_INPUT_PHONE = ExceptionKey.BAD_INPUT_PHONE
+    BAD_INPUT_TIMEZONE = ExceptionKey.BAD_INPUT_TIMEZONE
+    BAD_INPUT_FILE_NAME = ExceptionKey.BAD_INPUT_FILE_NAME
+    NOT_FOUND_USER = ExceptionKey.NOT_FOUND_USER
+    NOT_FOUND_TENANT = ExceptionKey.NOT_FOUND_TENANT
+    NOT_FOUND_ITEM = ExceptionKey.NOT_FOUND_ITEM
+
+    @property
+    def name(self) -> str:
+        """Returns the layer name."""
+        return "ExceptionKeyENUM"
+

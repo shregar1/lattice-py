@@ -1,0 +1,7 @@
+{
+  "secret": "change-me-to-a-long-random-string-in-production-min-32-chars",
+  "refresh_secret": "change-me-to-another-long-random-string-min-32-chars",
+  "expires_minutes": 15,
+  "refresh_expires_days": 7,
+  "algorithm": "HS256"
+}

@@ -1,0 +1,7 @@
+{
+  "logs_dir": "logs",
+  "migrations_dir": "migrations",
+  "scripts_dir": "scripts",
+  "media_dir": "uploads",
+  "media_url_prefix": "/media"
+}

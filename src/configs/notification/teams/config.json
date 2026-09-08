@@ -1,0 +1,6 @@
+{
+  "webhook_url": null,
+  "timeout_seconds": 10,
+  "theme_color": "0076D7",
+  "title": "mono-backend Notification"
+}

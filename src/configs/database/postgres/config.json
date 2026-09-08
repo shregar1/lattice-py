@@ -1,0 +1,15 @@
+{
+  "postgres_url": "postgres://mono-backend:mono-backend_secret@localhost:5432/mono-backend",
+  "postgres_host": "localhost",
+  "postgres_port": 5432,
+  "postgres_database": "mono-backend",
+  "postgres_user": "mono-backend",
+  "postgres_password": "mono-backend_secret",
+  "postgres_schema": "public",
+  "postgres_ssl_mode": "disable",
+  "postgres_pool_size": 10,
+  "postgres_max_overflow": 5,
+  "postgres_pool_timeout": 30,
+  "postgres_pool_recycle": 1800,
+  "postgres_echo": false
+}

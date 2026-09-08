@@ -1,0 +1,155 @@
+# ── Byte-compiled / optimized / DLL files ──────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# ── C extensions ────────────────────────────────────────────────────────────────
+*.so
+*.pyd
+
+# ── Distribution / packaging ────────────────────────────────────────────────────
+.eggs/
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+MANIFEST
+*.tar.gz
+*.whl
+
+# ── Installer logs ───────────────────────────────────────────────────────────────
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ── Virtual environments ─────────────────────────────────────────────────────────
+.venv/
+venv/
+venv*/
+ENV/
+env/
+env.bak/
+.env.bak
+.python-version
+
+# ── Environment / secrets ────────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── pyproject / setup cache ──────────────────────────────────────────────────────
+.cache/
+*.cfg.bak
+*.ini.bak
+
+# ── Testing & Coverage ───────────────────────────────────────────────────────────
+.pytest_cache/
+.pytest_tmp/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+nosetests.xml
+test-results/
+test-reports/
+
+# ── Type checkers ────────────────────────────────────────────────────────────────
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pytype/
+.pyre/
+
+# ── Linters & Formatters ─────────────────────────────────────────────────────────
+.ruff_cache/
+.flake8
+.pylintrc.d/
+
+# ── Jupyter / IPython ────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+profile_default/
+ipython_config.py
+
+# ── Documentation ────────────────────────────────────────────────────────────────
+docs/_build/
+site/
+.pdoc/
+
+# ── Database / local storage ─────────────────────────────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+
+# ── Alembic / migrations ─────────────────────────────────────────────────────────
+migrations/versions/*.pyc
+
+# ── Logs & temporary data ────────────────────────────────────────────────────────
+*.log
+*.log.*
+logs/
+uploads/
+tmp/
+temp/
+.tmp/
+
+# ── IDE & Editor files ───────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*~
+*.bak
+.project
+.classpath
+*.iml
+
+# ── OS / System ──────────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ── uv / pip-tools / Poetry ──────────────────────────────────────────────────────
+.uv/
+uv.lock
+poetry.lock
+requirements.txt.bak
+pip-constraints.txt
+
+# ── Celery ───────────────────────────────────────────────────────────────────────
+celerybeat-schedule
+celerybeat.pid
+
+# ── Profiling ────────────────────────────────────────────────────────────────────
+*.prof
+*.lprof
+
+# ── Rope project settings ────────────────────────────────────────────────────────
+.ropeproject/
+
+# ── Translations ─────────────────────────────────────────────────────────────────
+*.mo
+*.pot
+
+# ── Static / media (project-specific) ───────────────────────────────────────────
+staticfiles/
+mediafiles/
+.venv

@@ -1,0 +1,7 @@
+"""DedupGroupCandidate repository services package."""
+
+from .abstraction import IDedupGroupCandidateRepositoryService
+from .dedup_group_candidate.create import CreateDedupGroupCandidateService
+from .dedup_group_candidate.update import UpdateDedupGroupCandidateService
+from .dedup_group_candidate.delete import DeleteDedupGroupCandidateService
+from .dedup_group_candidate.filter import FilterDedupGroupCandidateService

@@ -1,0 +1,10 @@
+{
+  "client_id": null,
+  "client_secret": null,
+  "redirect_uri": "http://localhost:8000/api/v1/auth/oauth/callback",
+  "scopes": [
+    "openid",
+    "profile",
+    "email"
+  ]
+}

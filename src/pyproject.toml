@@ -1,0 +1,79 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mono-backend-backend"
+version = "0.1.0"
+description = "mono-backend"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "", email = "" },
+]
+keywords = ["mono-backend", "rivex", "backend", "api", "layered-architecture"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Framework :: AsyncIO",
+    "Topic :: Internet :: WWW/HTTP :: HTTP Servers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "rivex>=0.1.0",
+    "logx-py>=0.1.0",
+    "ormx>=0.1.0",
+    "pydantic[email]>=2.10.0",
+    "pydantic-settings>=2.7.0",
+    "python-multipart>=0.0.20",
+    "httpx>=0.28.0",
+    "ulid-py>=1.1.0",
+    "python-nanoid>=2.0.0",
+    "motor>=3.6.0",
+]
+
+[project.urls]
+Repository = ""
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.0",
+    "pytest-asyncio>=0.25.0",
+    "pytest-cov>=6.0.0",
+    "ruff>=0.9.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = [
+    "abstractions*",
+    "errors*",
+    "middlewares*",
+    "models*",
+    "configs*",
+    "configurations*",
+    "controllers*",
+    "factories*",
+    "utilities*",
+    "constants*",
+    "enums*",
+    "repositories*",
+    "dependencies*",
+    "dtos*",
+    "mappers*",
+    "services*",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["F", "E", "W"]
+ignore = ["RUF012", "B008", "E501"]

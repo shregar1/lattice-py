@@ -1,0 +1,11 @@
+{
+  "name": "mono",
+  "powered_by": "vexarr",
+  "host": "0.0.0.0",
+  "port": 8000,
+  "cors_origin": "http://localhost:3000",
+  "rate_limit_max": 100,
+  "rate_limit_window_seconds": 60,
+  "debug": true,
+  "request_timeout": 30000
+}

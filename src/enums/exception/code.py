@@ -1,0 +1,46 @@
+"""code enum module."""
+
+from enum import Enum
+from abstractions import EnumLayer
+from constants import ExceptionCode
+
+
+class ExceptionCodeENUM(EnumLayer):
+    DOMAIN_ERROR = ExceptionCode.DOMAIN_ERROR
+    NOT_FOUND = ExceptionCode.NOT_FOUND
+    UNAUTHORIZED = ExceptionCode.UNAUTHORIZED
+    FORBIDDEN = ExceptionCode.FORBIDDEN
+    METHOD_NOT_ALLOWED = ExceptionCode.METHOD_NOT_ALLOWED
+    CONFLICT = ExceptionCode.CONFLICT
+    PAYLOAD_TOO_LARGE = ExceptionCode.PAYLOAD_TOO_LARGE
+    UNSUPPORTED_MEDIA_TYPE = ExceptionCode.UNSUPPORTED_MEDIA_TYPE
+    VALIDATION_ERROR = ExceptionCode.VALIDATION_ERROR
+    UNPROCESSABLE_ENTITY = ExceptionCode.UNPROCESSABLE_ENTITY
+    TOO_MANY_REQUESTS = ExceptionCode.TOO_MANY_REQUESTS
+    INTERNAL_SERVER_ERROR = ExceptionCode.INTERNAL_SERVER_ERROR
+    BAD_GATEWAY = ExceptionCode.BAD_GATEWAY
+    SERVICE_UNAVAILABLE = ExceptionCode.SERVICE_UNAVAILABLE
+    GATEWAY_TIMEOUT = ExceptionCode.GATEWAY_TIMEOUT
+    PROHIBITED_ID_PARAMETER = ExceptionCode.PROHIBITED_ID_PARAMETER
+    MALICIOUS_INPUT_DETECTED = ExceptionCode.MALICIOUS_INPUT_DETECTED
+    BAD_INPUT_EMAIL = ExceptionCode.BAD_INPUT_EMAIL
+    BAD_INPUT_PASSWORD = ExceptionCode.BAD_INPUT_PASSWORD
+    BAD_INPUT_URN = ExceptionCode.BAD_INPUT_URN
+    BAD_INPUT_URL = ExceptionCode.BAD_INPUT_URL
+    BAD_INPUT_ENUM = ExceptionCode.BAD_INPUT_ENUM
+    BAD_INPUT_PAGINATION = ExceptionCode.BAD_INPUT_PAGINATION
+    BAD_INPUT_DATE_TIME = ExceptionCode.BAD_INPUT_DATE_TIME
+    BAD_INPUT_NUMERIC = ExceptionCode.BAD_INPUT_NUMERIC
+    BAD_INPUT_SLUG = ExceptionCode.BAD_INPUT_SLUG
+    BAD_INPUT_PHONE = ExceptionCode.BAD_INPUT_PHONE
+    BAD_INPUT_TIMEZONE = ExceptionCode.BAD_INPUT_TIMEZONE
+    BAD_INPUT_FILE_NAME = ExceptionCode.BAD_INPUT_FILE_NAME
+    NOT_FOUND_USER = ExceptionCode.NOT_FOUND_USER
+    NOT_FOUND_TENANT = ExceptionCode.NOT_FOUND_TENANT
+    NOT_FOUND_ITEM = ExceptionCode.NOT_FOUND_ITEM
+
+    @property
+    def name(self) -> str:
+        """Returns the layer name."""
+        return "ExceptionCodeENUM"
+

@@ -1,0 +1,9 @@
+{
+  "issuer": "mono",
+  "totp_step_seconds": 30,
+  "totp_digits": 6,
+  "recovery_codes_count": 10,
+  "recovery_code_length": 8,
+  "otp_expires_minutes": 5,
+  "max_attempts": 3
+}

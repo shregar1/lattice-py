@@ -1,0 +1,50 @@
+from typing import Final
+
+from .abstraction import IConstant
+
+
+class ExceptionCode(IConstant):
+
+    DOMAIN_ERROR: Final[str] = "DOMAIN_ERROR"
+    NOT_FOUND: Final[str] = "NOT_FOUND"
+    UNAUTHORIZED: Final[str] = "UNAUTHORIZED"
+    FORBIDDEN: Final[str] = "FORBIDDEN"
+    METHOD_NOT_ALLOWED: Final[str] = "METHOD_NOT_ALLOWED"
+    CONFLICT: Final[str] = "CONFLICT"
+    PAYLOAD_TOO_LARGE: Final[str] = "PAYLOAD_TOO_LARGE"
+    UNSUPPORTED_MEDIA_TYPE: Final[str] = "UNSUPPORTED_MEDIA_TYPE"
+    VALIDATION_ERROR: Final[str] = "VALIDATION_ERROR"
+    UNPROCESSABLE_ENTITY: Final[str] = "UNPROCESSABLE_ENTITY"
+    TOO_MANY_REQUESTS: Final[str] = "TOO_MANY_REQUESTS"
+    INTERNAL_SERVER_ERROR: Final[str] = "INTERNAL_SERVER_ERROR"
+    BAD_GATEWAY: Final[str] = "BAD_GATEWAY"
+    SERVICE_UNAVAILABLE: Final[str] = "SERVICE_UNAVAILABLE"
+    GATEWAY_TIMEOUT: Final[str] = "GATEWAY_TIMEOUT"
+    PROHIBITED_ID_PARAMETER: Final[str] = "PROHIBITED_ID_PARAMETER"
+    MALICIOUS_INPUT_DETECTED: Final[str] = "MALICIOUS_INPUT_DETECTED"
+    BAD_INPUT_EMAIL: Final[str] = "BAD_INPUT_EMAIL"
+    BAD_INPUT_PASSWORD: Final[str] = "BAD_INPUT_PASSWORD"
+    BAD_INPUT_URN: Final[str] = "BAD_INPUT_URN"
+    BAD_INPUT_URL: Final[str] = "BAD_INPUT_URL"
+    BAD_INPUT_ENUM: Final[str] = "BAD_INPUT_ENUM"
+    BAD_INPUT_PAGINATION: Final[str] = "BAD_INPUT_PAGINATION"
+    BAD_INPUT_DATE_TIME: Final[str] = "BAD_INPUT_DATE_TIME"
+    BAD_INPUT_NUMERIC: Final[str] = "BAD_INPUT_NUMERIC"
+    BAD_INPUT_STRING: Final[str] = "BAD_INPUT_STRING"
+    BAD_INPUT_DECIMAL: Final[str] = "BAD_INPUT_DECIMAL"
+    BAD_INPUT_ALPHANUMERIC: Final[str] = "BAD_INPUT_ALPHANUMERIC"
+    BAD_INPUT_SLUG: Final[str] = "BAD_INPUT_SLUG"
+    BAD_INPUT_PHONE: Final[str] = "BAD_INPUT_PHONE"
+    BAD_INPUT_TIMEZONE: Final[str] = "BAD_INPUT_TIMEZONE"
+    BAD_INPUT_FILE_NAME: Final[str] = "BAD_INPUT_FILE_NAME"
+    NOT_FOUND_USER: Final[str] = "NOT_FOUND_USER"
+    NOT_FOUND_TENANT: Final[str] = "NOT_FOUND_TENANT"
+    NOT_FOUND_ITEM: Final[str] = "NOT_FOUND_ITEM"
+    NOT_FOUND_URN: Final[str] = "NOT_FOUND_URN"
+    NOT_FOUND_ID: Final[str] = "NOT_FOUND_ID"
+    NOT_FOUND_CODE: Final[str] = "NOT_FOUND_CODE"
+
+    @property
+    def name(self) -> str:
+        """Returns the class name."""
+        return "ExceptionCode"

@@ -1,0 +1,8 @@
+{
+  "webhook_url": null,
+  "bot_token": null,
+  "default_channel": "#general",
+  "username": "mono-backend",
+  "icon_emoji": ":robot_face:",
+  "timeout_seconds": 10
+}
